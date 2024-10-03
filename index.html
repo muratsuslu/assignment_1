@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Assignment 1</title>
+</head>
+<body >
+    <div ng-controller="MainController">
+        <div>
+            <h1>Assignment 1</h1>
+        </div>
+        <div>
+            <label for="foodInput">Please write your foods to learn whether they are too much</label>
+            <input type="text" id="foodInput" ng-model="foodInput">
+            <button id="calculate" ng-click="Calculate()">Calculate</button>
+            <p>{{resultMessage}}</p>
+        </div>
+    </div>
+
+</body>
+</html>
